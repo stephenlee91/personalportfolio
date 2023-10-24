@@ -1,0 +1,429 @@
+body {
+    background-color: #02182B;
+  }  
+
+.navbar {
+    overflow: hidden;
+    background-color: #02182B;
+}
+
+.navbar a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #F4C889;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #F4C889;
+    color: #02182B;
+}
+
+.navbar-image {
+    position: absolute;
+    left: 30px; /* Adjust the left position as needed */
+    top: 50%; /* Position the image vertically in the middle */
+    transform: translateY(-50%); /* Center vertically */
+    width: 90px; /* Adjust the width as needed */
+  }
+
+.hero-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align content to the left */
+    margin-top: 100px; /* Add margin to push the hero section down */
+}
+
+.hero-section {
+    flex: 1;
+    text-align: left; /* Align the text to the left */
+    padding: 40px;
+}
+
+.hero-section__text {
+    font-size: 24px;
+    color: #fff;
+}
+  
+.hello-text {
+    font-size: 80px;
+    color: #F4C889;
+}
+  
+.name-text {
+    font-size: 40px;
+    color: #F4C889;
+}
+  
+.description-text {
+    color: #fff;
+}
+  
+.hero-image {
+    flex: 1; /* Let the image take the available space */
+    text-align: center; /* Align the image to the right */
+    padding: 40px;
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+  
+.icon-section {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.icon-link {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+}
+  
+.icon-link:hover {
+    color: #ddd;
+}
+  
+.hello-text {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; /* Reduce duration to 0.5s for a faster fade-in */
+    animation-delay: 0.5s;
+}  
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+.name-text {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; /* Reduce duration to 0.5s for a faster fade-in */
+    animation-delay: 0.5s; /* Adjust delay accordingly */
+}  
+  
+.description-text {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; /* Reduce duration to 0.5s for a faster fade-in */
+    animation-delay: 0.5s; /* Adjust delay accordingly */
+}  
+
+.icon-link {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Reduce duration to 0.5s for a faster fade-in */
+}
+  
+.icon-link:nth-child(1) {
+    animation-delay: 1.2s; /* Adjust delay accordingly */
+}
+  
+.icon-link:nth-child(2) {
+    animation-delay: 1.4s; /* Adjust delay accordingly */
+}
+  
+.icon-link:nth-child(3) {
+    animation-delay: 1.6s; /* Adjust delay accordingly */
+}
+  
+.icon-link:nth-child(4) {
+    animation-delay: 1.8s; /* Adjust delay accordingly */
+}  
+
+.hero-image img {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Reduce duration to 0.5s for a faster fade-in */
+    animation-delay: 2s; /* Adjust delay accordingly */
+}
+  
+.education-container {
+    display: flex;
+    align-items: center;
+    background-color: #02182B;
+    padding: 20px; /* Adjust the padding as needed */
+    margin-top: 100px; /* Add margin to push the section down */
+}
+  
+.education-image {
+    max-width: 250px;
+    margin-right: 20px; /* Add some space between the image and education details */
+}
+
+.education-details {
+    color: #FFF;
+    flex: 1; /* Allow the education details to take up available space */
+    padding-left: 20px;
+}
+
+.education-details h2{
+    color: #F4C889; /* Gold text color for headers and strong elements */
+}
+  
+.scrollable-title {
+    text-align: center;
+    font-weight: bold;
+    color: #F4C889; /* Gold text color for the title */
+    margin-bottom: 10px;
+}
+  
+.courses-scrollable {
+    width: 55%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-image: url('assets/images/ucilogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #F4C889; /* Add a gold box outline */
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    margin-right: 30px;
+}
+  
+.courses-scrollable ul {
+    list-style-type: none; /* Remove the bullets */
+    padding: 0;
+}
+  
+.courses-scrollable li:before {
+    content: "\2022"; /* Use a bullet (•) as a separator */
+    color: #F4C889; /* Set course code color to gold */
+    margin-right: 10px; /* Add space between the bullet and course code */
+}
+
+.courses-scrollable li {
+    color: #fff; /* Set course name color to white */
+    font-weight: normal; /* Make course name normal (not bold) */
+    margin: 10px 0; /* Add space between courses */
+}
+
+.in-progress {
+    font-style: italic;
+    font-weight: bolder;
+    color: #edb260; /* Set in-progress course color to gold */
+}
+
+.in-progress-key {
+    float: right;
+    margin-top: -30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.section-title {
+    font-size: 28px; /* Adjust the font size for the title */
+    color: #F4C889; /* Gold text color */
+    text-align: center;
+    margin-bottom: 20px; /* Add space between the title and the grid */
+  }
+  
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+  
+.hobby {
+    background: #02182B;
+    border: 2px solid #F4C889;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.hobby img {
+    max-width: 100px;
+}
+  
+.hobby-text {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#aspirations,
+#hobbies,
+#testimony {
+  background-color: #02182B; /* Set background color */
+  text-align: center;
+  margin-top: 150px;
+}
+
+#aspirations h2,
+#hobbies h2,
+#testimony h2 {
+  font-size: 32px; /* Adjust the font size for section headings */
+  color: #F4C889; /* Heading color */
+  margin-bottom: 20px; /* Add space between heading and content */
+}
+
+#aspirations p,
+#hobbies p,
+#testimony p {
+  font-size: 18px; /* Adjust the font size for paragraph text */
+  color: #fff; /* Text color */
+}
+
+#testimony blockquote {
+  font-size: 20px; /* Adjust the font size for the testimonial text */
+  border-left: 4px solid #F4C889; /* Add a left border for the testimonial */
+  padding-left: 20px; /* Space between border and text */
+}
+
+#testimony blockquote p {
+  margin: 10px 0; /* Add space between testimonial paragraphs */
+}
+
+@media (max-width: 768px) {
+  #aspirations,
+  #hobbies,
+  #testimony {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+.profile-picture {
+    max-width: 250px;
+}
+
+.profile-picture img {
+    max-width: 250%;
+    margin-left: 550px;
+}
+
+.experience-programmer-image {
+    max-width: 250px;
+}
+
+.experience-programmer-image img {
+    max-width: 250%;
+    margin-left: 20px;
+    margin-top: 50px;
+    animation: moveUp 1.5s ease-in-out forwards;
+  }
+  
+.experience-header h1 {
+    color: #F4C889;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    margin-right: 250px;
+    margin-top: -200px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards, moveUp 1.5s ease-in-out forwards;
+}
+  
+.experience-text {
+    color: #FFF;
+    font-size: 18px;
+    float: right;
+    margin-right: 150px;
+    margin-top: -100px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards, moveUp 1.5s ease-in-out forwards;
+}
+  
+@keyframes moveUp {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+.experience-klutchshots-image {
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+.experience-klutchshots-image img {
+    max-width: 150px;
+}
+
+.experience-description {
+    margin-left: 240px;
+    margin-top: -145px;
+}
+
+.experience-description h2 {
+    font-size: 24px;
+    color: #F4C889;
+    margin: 0;
+}
+  
+.company-name {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+  
+.date {
+    margin-left: 900px;
+    margin-top: -55px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.location {
+    margin-left: 1020px;
+    margin-top: -20px;
+    color: #FFF;
+}
+  
+.job-description {
+    font-size: 18px;
+    color: #FFF;
+    max-width: 1160px;
+}
+
+.experience-irvinesocceracademy-image {
+    margin-left: 25px;
+    margin-top: 150px;
+}
+
+.experience-irvinesocceracademy-image img {
+    max-width: 180px;
+}
+
+.experience-amazonfresh-image {
+    margin-left: 25px;
+    margin-top: 150px;
+}
+
+.experience-amazonfresh-image img {
+    max-width: 180px;
+}
+
+.experience-smithsonian-image {
+    margin-left: 25px;
+    margin-top: 150px;
+}
+
+.experience-smithsonian-image img {
+    max-width: 180px;
+}
+
+.experience-library-image {
+    margin-left: 25px;
+    margin-top: 150px;
+}
+
+.experience-library-image img {
+    max-width: 180px;
+}
+
+
+
